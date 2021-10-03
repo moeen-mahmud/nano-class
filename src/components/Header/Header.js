@@ -3,11 +3,42 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <NavLink to="/home">Home</NavLink>
-      <NavLink to="/about-us">About</NavLink>
-      <NavLink to="/classes">Classes</NavLink>
-      <NavLink to="/special">Special</NavLink>
+    <div className="flex justify-around items-center py-8 mb-6">
+      <div>
+        <NavLink to="/" className="text-4xl font-bold text-indigo-600">
+          Nano Class
+        </NavLink>
+      </div>
+      <div>
+        <NavLink
+          className="text-xl mr-8"
+          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
+          to="/home"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className="text-xl mr-8"
+          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
+          to="/about-us"
+        >
+          About
+        </NavLink>
+        <NavLink
+          className="text-xl mr-8"
+          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
+          to="/classes"
+        >
+          Classes
+        </NavLink>
+        <NavLink
+          className="text-xl mr-8"
+          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
+          to="/special"
+        >
+          Special
+        </NavLink>
+      </div>
     </div>
   );
 };

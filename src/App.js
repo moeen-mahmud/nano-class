@@ -10,7 +10,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
-      <h1>Main App</h1>
       <Router>
         <Header></Header>
         <Switch>

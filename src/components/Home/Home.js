@@ -1,19 +1,29 @@
+// Importing necessary files
 import React from "react";
 import { useHistory } from "react-router";
+
+// Importing custom hook
 import useClasses from "../hooks/useClasses";
+
+// Importing single class component
 import SingleClass from "../SingleClass/SingleClass";
 
+// Home Component
 const Home = () => {
+  //Using custom hook
   const [classes] = useClasses([]);
 
+  //Using history hooks from react router dom
   const history = useHistory();
 
+  //Click handler to go to class services
   const exploreButton = () => {
     history.push("/classes");
   };
 
   return (
     <>
+      {/* Hero Area */}
       <div className="flex justify-around items-center mt-16">
         <div className="ml-12 leading-loose">
           <h2 className="text-6xl leading-snug font-bold">
@@ -36,6 +46,8 @@ const Home = () => {
           />
         </div>
       </div>
+
+      {/* Login Area */}
       <div className="mt-16 pt-32 pb-18">
         <div className="text-center mb-24">
           <h2 className="text-5xl leading-snug font-bold">
@@ -84,6 +96,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Class services area */}
       <div className="py-32 text-center">
         <h1 className="text-center text-5xl font-bold mb-16">
           Explore Classes
@@ -95,6 +109,8 @@ const Home = () => {
             ))
             .slice(0, 4)}
         </div>
+
+        {/* Button for handling link jump */}
         <button
           onClick={exploreButton}
           className="mt-12 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl"

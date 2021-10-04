@@ -1,19 +1,31 @@
+// Importing necessary file
 import React from "react";
+
+// Importing custom useClass hook
 import useClasses from "../hooks/useClasses";
+
+// Importing instructor component
 import Instructor from "../Instructor/Instructor";
+
+// Using useHistory hook from react router dom
 import { useHistory } from "react-router-dom";
 
+// Instructors component
 const Instructors = () => {
+  //Using custom hook
   const [classes] = useClasses([]);
-  // const history = useHistory();
+
+  //Using history to go to about us page
   const history = useHistory();
 
+  //Click handler
   const handleGetStarted = () => {
     history.push("./about-us");
   };
 
   return (
     <div className="px-16">
+      {/* Hero area */}
       <div className="flex justify-around items-center mb-16">
         <div className="w-1/2">
           <h1 className="text-6xl font-bold mb-12">Meet our instructors</h1>
@@ -29,6 +41,8 @@ const Instructors = () => {
           <img src="./images/instructors_hero.jpg" alt="Hero Instructor" />
         </div>
       </div>
+
+      {/* Showing all instructors */}
       <div className="grid grid-cols-3 place-items-center gap-10 text-center">
         {classes.map((instructor) => (
           <Instructor instructor={instructor} key={instructor.id}></Instructor>
@@ -48,6 +62,8 @@ const Instructors = () => {
             Get Started
           </button>
         </div>
+
+        {/* Teaching section */}
         <div className="w-1/2">
           <img src="./images/teach-us.jpg" alt="Teach with us" />
         </div>

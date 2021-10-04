@@ -1,12 +1,16 @@
+// Importing necessary files
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Importing necessary components
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import AboutUs from "./components/AboutUs/AboutUs";
 import Classes from "./components/Classes/Classes";
+import Instructors from "./components/Instructors/Instructors";
+import AboutUs from "./components/AboutUs/AboutUs";
 import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
-import Instructors from "./components/Instructors/Instructors";
 
+// Main app component
 function App() {
   return (
     <div>

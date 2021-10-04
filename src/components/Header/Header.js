@@ -1,14 +1,19 @@
+// Importing necessary files
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+// Header Component
 const Header = () => {
   return (
     <div className="flex justify-around items-center py-8 mb-6">
+      {/* Brand Name */}
       <div>
         <NavLink to="/" className="text-4xl font-bold text-indigo-600">
           Nano Class
         </NavLink>
       </div>
+
+      {/* Nav Links */}
       <div>
         <NavLink
           className="text-xl mr-8"

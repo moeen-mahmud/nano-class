@@ -1,5 +1,7 @@
+// Importing necessary file
 import React from "react";
 
+// Not found component
 const NotFound = () => {
   return (
     <div className="text-center py-24">

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "thumb": "./images/class_images/web3_waves.png",
+    "title": "Mastering Web3 With Waves",
+    "instructor": "John Huellette",
+    "price": 39,
+    "level": "Beginner"
+  },
+  {
+    "id": 2,
+    "thumb": "./images/class_images/blockchain.jpg",
+    "title": "Become A Blockchain Developer",
+    "instructor": "Stark Grimm",
+    "price": 55,
+    "level": "Intermediate"
+  },
+  {
+    "id": 3,
+    "thumb": "./images/class_images/decent_app.jpg",
+    "title": "Decentralized Applications (Dapps)",
+    "instructor": "Zhang Lao",
+    "price": 35,
+    "level": "Beginner"
+  },
+  {
+    "id": 4,
+    "thumb": "./images/class_images/etherium_solidity.jpg",
+    "title": "Etherium and Solidity: The Complete Guide",
+    "instructor": "Adam Hatham",
+    "price": 39,
+    "level": "Intermediate"
+  },
+  {
+    "id": 5,
+    "thumb": "./images/class_images/solidity_smart.jpg",
+    "title": "Solidity Smart Contracts: Make DApps From Scratch",
+    "instructor": "George Gru",
+    "price": 69,
+    "level": "Beginner"
+  },
+  {
+    "id": 6,
+    "thumb": "./images/class_images/blockchain_like5.jpg",
+    "title": "Exlplain Blockchain To A Five Years Old",
+    "instructor": "Stephen Wank",
+    "price": 29,
+    "level": "Beginner"
+  },
+  {
+    "id": 7,
+    "thumb": "./images/class_images/blockchain_business.jpg",
+    "title": "Blockchain For Business",
+    "instructor": "Catalin Rogers",
+    "price": 75,
+    "level": "Advanced"
+  }
+]

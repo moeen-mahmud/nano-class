@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import SingleClass from "../SingleClass/SingleClass";
 
 const Home = () => {
+  const [classes, setClasses] = useState([]);
+
+  useEffect(() => {
+    fetch("./classData.json")
+      .then((res) => res.json())
+      .then((data) => setClasses(data));
+  }, []);
+
   return (
     <>
       <div className="flex justify-around items-center mt-16">
@@ -71,6 +80,14 @@ const Home = () => {
               Join
             </button>
           </div>
+        </div>
+      </div>
+      <div className="py-32">
+        <h1>Explore Classes</h1>
+        <div>
+          {classes.map((clas) => (
+            <SingleClass clas={clas} key={clas.id}></SingleClass>
+          ))}
         </div>
       </div>
     </>

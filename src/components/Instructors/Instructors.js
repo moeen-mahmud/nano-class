@@ -1,9 +1,16 @@
 import React from "react";
 import useClasses from "../hooks/useClasses";
 import Instructor from "../Instructor/Instructor";
+import { useHistory } from "react-router-dom";
 
 const Instructors = () => {
   const [classes] = useClasses([]);
+  // const history = useHistory();
+  const history = useHistory();
+
+  const handleGetStarted = () => {
+    history.push("./about-us");
+  };
 
   return (
     <div className="px-16">
@@ -34,6 +41,12 @@ const Instructors = () => {
             Become an instructor and change lives
             <br />— including your own
           </p>
+          <button
+            onClick={handleGetStarted}
+            className="mt-6 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl"
+          >
+            Get Started
+          </button>
         </div>
         <div className="w-1/2">
           <img src="./images/teach-us.jpg" alt="Teach with us" />

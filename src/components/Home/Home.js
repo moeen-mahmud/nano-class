@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useHistory } from "react-router";
+import useClasses from "../hooks/useClasses";
 import SingleClass from "../SingleClass/SingleClass";
 
 const Home = () => {
-  const [classes, setClasses] = useState([]);
+  const [classes] = useClasses([]);
 
-  useEffect(() => {
-    fetch("./classData.json")
-      .then((res) => res.json())
-      .then((data) => setClasses(data));
-  }, []);
+  const history = useHistory();
+
+  const exploreButton = () => {
+    history.push("/classes");
+  };
 
   return (
     <>
@@ -34,9 +36,9 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="mt-16 py-32">
+      <div className="mt-16 pt-32 pb-18">
         <div className="text-center mb-24">
-          <h2 className="text-6xl leading-snug font-bold">
+          <h2 className="text-5xl leading-snug font-bold">
             What are you waiting for!
           </h2>
           <p className="text-xl leading-normal mt-5">Join us today</p>
@@ -82,13 +84,23 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-32">
-        <h1>Explore Classes</h1>
-        <div>
-          {classes.map((clas) => (
-            <SingleClass clas={clas} key={clas.id}></SingleClass>
-          ))}
+      <div className="py-32 text-center">
+        <h1 className="text-center text-5xl font-bold mb-16">
+          Explore Classes
+        </h1>
+        <div className="grid grid-cols-2 place-items-center w-3/5 mx-auto gap-8">
+          {classes
+            .map((clas) => (
+              <SingleClass clas={clas} key={clas.id}></SingleClass>
+            ))
+            .slice(0, 4)}
         </div>
+        <button
+          onClick={exploreButton}
+          className="mt-12 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl"
+        >
+          Explore More
+        </button>
       </div>
     </>
   );

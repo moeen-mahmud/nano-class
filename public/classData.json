@@ -2,57 +2,71 @@
   {
     "id": 1,
     "thumb": "./images/class_images/web3_waves.png",
+    "instructorThumb": "./images/instructors/instructor_1.jpg",
     "title": "Mastering Web3 With Waves",
     "instructor": "John Huellette",
     "price": 39,
-    "level": "Beginner"
+    "level": "Beginner",
+    "instructorAbout": "Oh. Science Fiction Theater. There, there, now, just relax. You've been asleep for almost nine hours now. Huh? whoa, this is it, this is the part coming up, Doc.Oh yes sir. This sounds pretty heavy. Uh, I think so. 1955? You're my ma- you're my ma. Alright, punk, now-Hey, don't I know you from somewhere? Erased from existence. George, there's nothing to be scared of. All it takes is a little self confidence. You know, if you put your mind to it, you could accomplish anything. Whoa, whoa, Biff, what's that? Yeah."
   },
   {
     "id": 2,
     "thumb": "./images/class_images/blockchain.jpg",
+    "instructorThumb": "./images/instructors/instructor_2.jpg",
     "title": "Become A Blockchain Developer",
     "instructor": "Stark Grimm",
     "price": 55,
-    "level": "Intermediate"
+    "level": "Intermediate",
+    "instructorAbout": "Whoa, this is heavy. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I know, and all I could say is I'm sorry. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? I know, and all I could say is I'm sorry."
   },
   {
     "id": 3,
     "thumb": "./images/class_images/decent_app.jpg",
+    "instructorThumb": "./images/instructors/instructor_3.jpg",
     "title": "Decentralized Applications (Dapps)",
     "instructor": "Zhang Lao",
     "price": 35,
-    "level": "Beginner"
+    "level": "Beginner",
+    "instructorAbout": "Aw yeah, everything is great. Erased from existence. Say, why do you let those boys push you around like that? Doc, wait. No, bastards. My insurance, it's your car, your insurance should pay for it. Hey, I wanna know who's gonna pay for this? I spilled beer all over it when that car smashed into me. Who's gonna pay my cleaning bill?"
   },
   {
     "id": 4,
     "thumb": "./images/class_images/etherium_solidity.jpg",
+    "instructorThumb": "./images/instructors/instructor_4.jpg",
     "title": "Etherium and Solidity: The Complete Guide",
     "instructor": "Adam Hatham",
     "price": 39,
-    "level": "Intermediate"
+    "level": "Intermediate",
+    "instructorAbout": "Just finishing up the second coat now. Let's get him. Let's put him in there. Well just gimme something without any sugar in it, okay? Marty, I'm sorry, but the only power source capable of generating one point twenty-one gigawatts of electricity is a bolt of lightning."
   },
   {
     "id": 5,
     "thumb": "./images/class_images/solidity_smart.jpg",
+    "instructorThumb": "./images/instructors/instructor_5.jpg",
     "title": "Solidity Smart Contracts: Make DApps From Scratch",
     "instructor": "George Gru",
     "price": 69,
-    "level": "Beginner"
+    "level": "Beginner",
+    "instructorAbout": "Jesus. Of course, the Enchantment Under The Sea Dance they're supposed to go to this, that's where they kiss for the first time. Yeah man, that was good. Let's do another one. George, there's nothing to be scared of. All it takes is a little self confidence. You know, if you put your mind to it, you could accomplish anything. Well just gimme something without any sugar in it, okay?"
   },
   {
     "id": 6,
     "thumb": "./images/class_images/blockchain_like5.jpg",
+    "instructorThumb": "./images/instructors/instructor_6.jpg",
     "title": "Exlplain Blockchain To A Five Years Old",
     "instructor": "Stephen Wank",
     "price": 29,
-    "level": "Beginner"
+    "level": "Beginner",
+    "instructorAbout": "Oh, you mean how you're supposed to act on a first date. What, I don't get what happened. That's Strickland. Jesus, didn't that guy ever have hair? Doc, Doc. Oh, no. You're alive. Bullet proof vest, how did you know, I never got a chance to tell you. About all that talk about screwing up future events, the space time continuum. Shape up, man. You're a slacker. You wanna be a slacker for the rest of your life?"
   },
   {
     "id": 7,
     "thumb": "./images/class_images/blockchain_business.jpg",
+    "instructorThumb": "./images/instructors/instructor_7.jpg",
     "title": "Blockchain For Business",
     "instructor": "Catalin Rogers",
     "price": 75,
-    "level": "Advanced"
+    "level": "Advanced",
+    "instructorAbout": "Now, Biff, um, can I assume that your insurance is gonna pay for the damage? Please, Marty, don't tell me, no man should know too much about their own destiny. Huh? Well, aren't you going up to the lake tonight, you've been planning it for two weeks. Okay, alright, Saturday is good, Saturday's good, I could spend a week in 1955. I could hang out, you could show me around."
   }
 ]

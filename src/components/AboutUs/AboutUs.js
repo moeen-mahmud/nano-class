@@ -21,17 +21,22 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-around items-center">
+      <div className="flex justify-around items-center my-32">
         <div className="w-1/2">
-          <h1>Got a question?</h1>
-          <p>Feel free to contact with us</p>
+          <h1 className="text-4xl font-bold mb-3">Got a question?</h1>
+          <p className="font-semibold text-lg mb-12">
+            Feel free to contact with us
+          </p>
           <textarea
-            className="border-2 rounded border-indigo-600"
+            className="border-2 rounded border-indigo-600 block p-3"
             name="message"
-            cols="80"
-            rows="10"
+            cols="70"
+            rows="5"
+            placeholder="How can I be benefited by your classes?"
           ></textarea>
-          <button>Send</button>
+          <button className="mt-6 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl">
+            Send
+          </button>
         </div>
         <div className="w-1/2">
           <img src="./images/contact_us.jpg" alt="Contact Us" />

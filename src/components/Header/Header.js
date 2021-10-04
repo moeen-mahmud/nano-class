@@ -20,13 +20,6 @@ const Header = () => {
         <NavLink
           className="text-xl mr-8"
           activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
-          to="/about-us"
-        >
-          About
-        </NavLink>
-        <NavLink
-          className="text-xl mr-8"
-          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
           to="/classes"
         >
           Classes
@@ -34,9 +27,16 @@ const Header = () => {
         <NavLink
           className="text-xl mr-8"
           activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
-          to="/special"
+          to="/instructors"
         >
-          Special
+          Instructors
+        </NavLink>
+        <NavLink
+          className="text-xl mr-8"
+          activeClassName="px-6 py-2 rounded bg-indigo-600 text-white"
+          to="/about-us"
+        >
+          About
         </NavLink>
       </div>
     </div>

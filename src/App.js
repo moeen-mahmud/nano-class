@@ -4,8 +4,8 @@ import Home from "./components/Home/Home";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Classes from "./components/Classes/Classes";
 import NotFound from "./components/NotFound/NotFound";
-import Special from "./components/Special/Special";
 import Footer from "./components/Footer/Footer";
+import Instructors from "./components/Instructors/Instructors";
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
           <Route path="/classes">
             <Classes></Classes>
           </Route>
-          <Route path="/special">
-            <Special></Special>
+          <Route path="/instructors">
+            <Instructors></Instructors>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

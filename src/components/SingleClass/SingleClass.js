@@ -1,8 +1,13 @@
+// Importing necessary file
 import React from "react";
 
+// Single class component
 const SingleClass = (props) => {
+  //Get data from props
   const { thumb, title, instructor, price, level } = props.clas;
+
   return (
+    //Class card
     <div className="shadow-lg rounded p-8 w-96 border-2 border-indigo-600">
       <img className="w-72 block mx-auto" src={thumb} alt={title} />
       <h1 className="text-2xl font-semibold text-indigo-600 my-4 h-16">

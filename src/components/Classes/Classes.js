@@ -7,6 +7,7 @@ import useClasses from "../hooks/useClasses";
 // Importing single class component
 import SingleClass from "../SingleClass/SingleClass";
 
+// Classes component
 const Classes = () => {
   //Using useClasses hook
   const [classes] = useClasses([]);

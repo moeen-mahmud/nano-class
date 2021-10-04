@@ -1,8 +1,11 @@
+// Importing necessary file
 import React from "react";
 
+// About us component
 const AboutUs = () => {
   return (
     <div className=" px-12 py-8">
+      {/* Top section */}
       <div className="flex justify-around items-center">
         <div className="w-1/2">
           <img src="./images/about_us.jpg" alt="About Us" />
@@ -21,6 +24,8 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+
+      {/* Questionaire section */}
       <div className="flex justify-around items-center my-32">
         <div className="w-1/2">
           <h1 className="text-4xl font-bold mb-3">Got a question?</h1>

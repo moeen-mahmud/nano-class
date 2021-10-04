@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="flex justify-around items-center my-8">
+      <div className="flex justify-around items-center mt-16">
         <div className="ml-12 leading-loose">
           <h2 className="text-6xl leading-snug font-bold">
             Be prepared
@@ -25,43 +25,52 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex justify-around items-center py-32">
-        <div>
+      <div className="mt-16 py-32">
+        <div className="text-center mb-24">
           <h2 className="text-6xl leading-snug font-bold">
             What are you waiting for!
           </h2>
           <p className="text-xl leading-normal mt-5">Join us today</p>
         </div>
-        <div>
-          <div className="my-6">
-            <label
-              htmlFor="email"
-              className="block text-2xl font-semibold mb-3"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="border-2 rounded border-indigo-600 w-96 p-2"
+        <div className="flex justify-around">
+          <div className="w-1/2">
+            <img
+              className="block mx-auto rounded"
+              src="./images/login-img.jpg"
+              alt="Join us"
             />
           </div>
-          <div className="mt-6">
-            <label
-              htmlFor="password"
-              className="block text-2xl font-semibold mb-3"
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              name="email"
-              className="border-2 rounded border-indigo-600 w-96 p-2"
-            />
+          <div>
+            <div className="my-6">
+              <label
+                htmlFor="email"
+                className="block text-2xl font-semibold mb-3"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="border-2 rounded border-indigo-600 w-96 p-2"
+              />
+            </div>
+            <div className="mt-6">
+              <label
+                htmlFor="password"
+                className="block text-2xl font-semibold mb-3"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                name="email"
+                className="border-2 rounded border-indigo-600 w-96 p-2"
+              />
+            </div>
+            <button className="mt-6 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl">
+              Join
+            </button>
           </div>
-          <button className="mt-6 mb-2 bg-indigo-600 text-white rounded px-12 py-2 text-xl">
-            Join
-          </button>
         </div>
       </div>
     </>

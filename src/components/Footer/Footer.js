@@ -1,5 +1,7 @@
+// Importing necessary fiel
 import React from "react";
 
+// Footer component
 const Footer = () => {
   return (
     <div className="bg-indigo-600 text-white py-16 text-center mt-16">

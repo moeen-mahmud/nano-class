@@ -22,7 +22,7 @@ const Instructors = () => {
           <img src="./images/instructors_hero.jpg" alt="Hero Instructor" />
         </div>
       </div>
-      <div>
+      <div className="grid grid-cols-3 place-items-center gap-10 text-center">
         {classes.map((instructor) => (
           <Instructor instructor={instructor} key={instructor.id}></Instructor>
         ))}

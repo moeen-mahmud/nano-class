@@ -1,5 +1,6 @@
 import React from "react";
 import useClasses from "../hooks/useClasses";
+import Instructor from "../Instructor/Instructor";
 
 const Instructors = () => {
   const [classes] = useClasses([]);
@@ -21,7 +22,11 @@ const Instructors = () => {
           <img src="./images/instructors_hero.jpg" alt="Hero Instructor" />
         </div>
       </div>
-      <div></div>
+      <div>
+        {classes.map((instructor) => (
+          <Instructor instructor={instructor} key={instructor.id}></Instructor>
+        ))}
+      </div>
     </div>
   );
 };

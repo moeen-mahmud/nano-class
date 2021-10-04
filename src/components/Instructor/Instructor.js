@@ -1,9 +1,11 @@
 import React from "react";
 
 const Instructor = (props) => {
+  const { instructor, instructorThumb } = props.instructor;
   return (
     <div>
-      <h1>Instructor</h1>
+      <img className="w-" src={instructorThumb} alt={instructor} />
+      <h1>{instructor}</h1>
     </div>
   );
 };
